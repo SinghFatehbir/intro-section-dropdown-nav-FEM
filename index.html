@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro section with dropdown navigation</title>
+  <link rel="stylesheet" href="./assets/style.css">
+</head>
+
+<body>
+  <main>
+
+    <!-- black overlay on website when hamburger menu opens -->
+    <div class="overlay"></div>
+
+
+    <!-- Header section  -->
+
+    <header>
+      <nav>
+        <img src="./images/logo.svg" alt="brand logo">
+
+        <!-- Hamburger icon  -->
+
+        <div class="hamburger-icon">
+          <input type="checkbox" id="checkbox" class="checkbox visuallyHidden">
+          <label for="checkbox">
+            <div class="hamburger">
+              <span class="bar bar1"></span>
+              <span class="bar bar2"></span>
+              <span class="bar bar3"></span>
+              <span class="bar bar4"></span>
+            </div>
+          </label>
+        </div>
+
+        <!-- Navigation links  -->
+
+        <div class="nav-links">
+          <div>
+            <ul class="primary-nav-items">
+              <li class="dropdown-btn features-dropdown-btn"><a href="#"><span>Features</span><img
+                    class="features-dropdown-arrow" src="./images/icon-arrow-down.svg" alt="arrow down icon"></a>
+                <ul class="features-dropdown-items dropdown-items">
+                  <li><a href="#"><img src="./images/icon-todo.svg" alt="icon-todo"><span>Todo List</span></a></li>
+                  <li><a href="#"><img src="./images/icon-calendar.svg" alt="icon-todo"><span>Calender</span></a></li>
+                  <li><a href="#"><img src="./images/icon-reminders.svg" alt="icon-todo"><span>Reminders</span></a></li>
+                  <li><a href="#"><img src="./images/icon-planning.svg" alt="icon-todo"><span>Planning</span></a></li>
+                </ul>
+              </li>
+              <li class="dropdown-btn company-dropdown-btn"><a href="#"><span>Company</span><img
+                    class="company-dropdown-arrow" src="./images/icon-arrow-down.svg" alt="arrow down icon"></a>
+                <ul class="company-dropdown-items dropdown-items">
+                  <li><a href="#">History</a></li>
+                  <li><a href="#">Our Team</a></li>
+                  <li><a href="#">Blog</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <ul class="primary-cta-items">
+              <li><a href="#">Login</a></li>
+              <li><a href="#">Register</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero section -->
+
+    <section class="hero-section">
+
+      <picture class="hero-image">
+        <source srcset="./images/image-hero-desktop.png" media="(min-width: 768px)">
+        <img src="./images/image-hero-mobile.png" alt="boy holding a laptop and some abstract illustration">
+      </picture>
+
+      <div class="hero-info">
+        <div class="hero-text">
+          <h1 class="hero-title">
+            Make remote work
+          </h1>
+          <p>
+            Get your team in sync, no matter your location. Streamline processes,
+            create team rituals, and watch productivity soar.
+          </p>
+          <button type="button" class="cta">Learn more</button>
+        </div>
+        <div class="clients">
+          <img src="./images/client-databiz.svg" class="logo1" alt="databiz logo">
+          <img src="./images/client-audiophile.svg" class="logo2" alt="audiophile logo">
+          <img src="./images/client-meet.svg" class="logo3" alt="meet logo">
+          <img src="./images/client-maker.svg" class="logo4" alt="maker logo">
+        </div>
+      </div>
+
+    </section>
+
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://www.frontendmentor.io/profile/fa7eh">Fatehbir Singh</a>.
+    </div>
+  </footer>
+</body>
+<script src="./assets/main.js"></script>
+
+</html>
